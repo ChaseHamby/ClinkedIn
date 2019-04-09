@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinkedIn.Validators
 {
+
     public class CreateUserRequestValidator
     {
         public bool Validate(CreateUserRequest requestToValidate)

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ClinkedIn.Validators;
 using ClinkedIn.Data;
 using ClinkedIn.Models;
-using ClinkedIn.Validators;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClinkedIn.Controllers
@@ -24,7 +23,7 @@ namespace ClinkedIn.Controllers
         }
 
         [HttpPost("register")]
-        public ActionResult<int> AddUser(CreateUserRequest createRequest)
+        public ActionResult AddUser(CreateUserRequest createRequest)
         {
             if (!_validator.Validate(createRequest))
             {
@@ -36,6 +35,4 @@ namespace ClinkedIn.Controllers
             return Created($"api/users/{newUser.Id}", newUser);
         }
     }
-
-
 }
