@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace ClinkedIn.Models
 {
-    public class User
+    public class CreateUserRequest
     {
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
