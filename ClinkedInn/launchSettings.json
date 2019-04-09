@@ -3,11 +3,10 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:54531",
-      "sslPort": 44382
+      "applicationUrl": "http://localhost:50407",
+      "sslPort": 44386
     }
   },
-  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
@@ -17,8 +16,8 @@
       }
     },
     "ClinkedIn": {
-      "commandName": "IISExpress",
-      "launchUrl": "api/values",
+      "commandName": "Project",
+      "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
